@@ -1,0 +1,121 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--background);
+    color: var(--text);
+    justify-content: center;
+    height: 100vh;
+    transition: background 0.3s, color 0.3s;
+}
+:root{
+    --background:#f4f4f4;
+    --text:#333;
+    --card:#fff;
+    --button-bg:#28a745;
+    --button-text:#fff;
+    --delete-text:#dcf354;
+}
+body.dark{
+    --background: #333;
+    --text:#f4f4f4;
+    --card:#444;
+    --button-bg:#218838;
+    --delete-bg:#c82333;
+}
+.container{
+    background: var(--card);
+    position: relative;
+    left: 10rem;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    width: 80%;
+    height: 100%;
+    transition: background 0.3s;
+}
+h1{
+    text-align: center;
+}
+.input-section{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+input{
+    height: 3rem;
+    font-size: 1rem;
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button{
+    padding: 10px;
+    background: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+button:hover{
+    background: green;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--card);
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+li.completed{
+    text-decoration: line-through;
+}
+.edit-btn{
+    position: fixed;
+    right: 15rem;
+}
+.delete-btn{
+    background: var(--delete-bg);
+    color: var(--delete-text);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-content{
+    width: 70%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px  10px rgba(0,0,0,0.3);
+}
+.modal-content input{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+.modal-content button{
+    margin-right: 5px;
+}

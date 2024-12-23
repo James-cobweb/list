@@ -1,0 +1,13 @@
+@media only screen and (max-width:480px){
+    .container{
+        position: relative;
+        left: 2rem;
+    }
+    input{
+        width: 7rem;
+    }
+    .edit-btn{
+        position: fixed;
+        right:9rem;
+    }
+}
