@@ -109,7 +109,6 @@ li.completed{
     align-items: center;
 }
 .modal-content{
-    font-size: 1.2rem;
     width: 70%;
     background: #fff;
     padding: 20px;
@@ -120,6 +119,7 @@ li.completed{
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
+    font-size: 1.2rem;
 }
 .modal-content button{
     margin-right: 5px;
