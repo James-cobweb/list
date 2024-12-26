@@ -44,7 +44,7 @@ h1{
 }
 input{
     height: 3rem;
-    font-size: 1rem;
+    font-size: 2rem;
     flex: 1;
     padding: 10px;
     border: 1px solid #ccc;
