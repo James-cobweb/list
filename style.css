@@ -1,7 +1,7 @@
 body{
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 2rem;
     background: var(--background);
     color: var(--text);
     justify-content: center;
@@ -82,8 +82,11 @@ li.completed{
     text-decoration: line-through;
 }
 .edit-btn{
-    position: fixed;
-    right: 15rem;
+    position: relative;
+    /* left: 30rem; */
+    padding: 5px 10px;
+    border-radius: 1px;
+    cursor: pointer;
 }
 .delete-btn{
     background: var(--delete-bg);
@@ -119,3 +122,4 @@ li.completed{
 .modal-content button{
     margin-right: 5px;
 }
+
